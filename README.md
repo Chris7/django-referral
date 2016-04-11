@@ -1,5 +1,7 @@
 # django-referral
 
+![build status](https://travis-ci.org/byteweaver/django-referral.png)
+
 A small django application for marketing using referral links
 
 ## What is this app good for?
@@ -24,7 +26,7 @@ lead him to your website.
 * django 1.7 migrations + legacy south support
 * No dependencies
 * 100% Test coverage
-* Supports django 1.4 - 1.7
+* Supports django 1.4 - 1.8
 * supports python 2 + 3
 
 ## Download
@@ -82,14 +84,19 @@ The name of the session key that will hold the detected referrer
 
 ###REFERRAL_AUTO_CREATE
 
-Defines weather unknown referrers shall be autocreated
+Defines whether unknown referrers shall be autocreated
 
 	Default: True
 
 ###REFERRAL_AUTO_ASSOCIATE
-Defines weather referrest should be associated to campaigns automatically using patterns
+Defines whether referrers should be associated to campaigns automatically using patterns
 
 	Default: True
+
+###REFERRAL_CASE_SENSITIVE
+Defines whether or referrer names are case-sensitive or not.
+
+  Default: False
 
 ## Testing
 
